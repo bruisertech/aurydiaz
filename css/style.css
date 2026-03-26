@@ -14,11 +14,11 @@
 
   --color-border: #333333;
 
-  /* Typography */
+  /* Tipografía */
   --font-primary: 'Times New Roman', Times, serif;
   --font-secondary: 'Times New Roman', Times, serif;
 
-  /* Spacing */
+  /* Espaciado */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 2rem;
@@ -106,7 +106,7 @@ ul {
 .mb-md { margin-bottom: var(--space-md); }
 .mb-lg { margin-bottom: var(--space-lg); }
 
-/* Buttons */
+/* Botones */
 .btn {
   display: inline-block;
   font-family: var(--font-primary);
