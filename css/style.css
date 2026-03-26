@@ -7,16 +7,16 @@
   --color-bg-darker: #0d0d0d;
   --color-bg-card: #1e1e1e;
 
-  --color-primary-gold: #d4af37; /* Gold for accents */
-  --color-primary-gold-hover: #e5c158;
+  --color-primary-gold: #e8a547; /* Gold for accents */
+  --color-primary-gold-hover: #c98c38;
   --color-text-main: #f5f5f5;
   --color-text-muted: #a0a0a0;
 
   --color-border: #333333;
 
   /* Typography */
-  --font-primary: 'Montserrat', sans-serif;
-  --font-secondary: 'Open Sans', sans-serif;
+  --font-primary: 'Times New Roman', Times, serif;
+  --font-secondary: 'Times New Roman', Times, serif;
 
   /* Spacing */
   --space-xs: 0.5rem;
@@ -129,7 +129,7 @@ ul {
   background-color: var(--color-primary-gold-hover);
   color: var(--color-bg-darker);
   transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 4px 10px rgba(232, 165, 71, 0.3);
 }
 
 .btn-outline {
@@ -600,4 +600,42 @@ textarea.form-control {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@keyframes gold-glow {
+  0% {
+    box-shadow: 0 0 5px rgba(232, 165, 71, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(232, 165, 71, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(232, 165, 71, 0.2);
+  }
+}
+
+.glow-effect {
+  animation: gold-glow 3s infinite;
+}
+
+.btn-gold:hover {
+  background-color: var(--color-primary-gold-hover);
+  color: var(--color-bg-darker);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(232, 165, 71, 0.5);
+  animation: none; /* override glow on hover if needed */
+}
+
+h1, h2, h3 {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.color-gold {
+  color: var(--color-primary-gold);
+  text-shadow: 0 0 10px rgba(232, 165, 71, 0.3);
+}
+
+.logo span {
+  color: var(--color-primary-gold);
+  text-shadow: 0 0 8px rgba(232, 165, 71, 0.5);
 }
