@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog de Aury Díaz & Asociados. Información, estrategias y actualidad legal sobre riesgo penal y SAGRILAFT.">
+    <title>Blog | Aury Díaz & Asociados</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Blog Specific Styles -->
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--space-md);
+            margin-top: var(--space-md);
+        }
+
+        .blog-card {
+            background-color: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform var(--transition-normal);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--color-primary-gold);
+        }
+
+        .blog-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: var(--space-sm);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-date {
+            color: var(--color-primary-gold);
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .blog-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-excerpt {
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+
+        .read-more {
+            color: var(--color-primary-gold);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            align-self: flex-start;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="var(--color-primary-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Aury Díaz <span>& Asociados</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="sobre-mi.html" class="nav-link">Acerca de</a>
+                <a href="servicios.html" class="nav-link">Servicios</a>
+                <a href="blog.html" class="nav-link active">Blog</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </nav>
+
+            <div class="nav-btn">
+                <a href="contacto.html" class="btn btn-gold">Consulta Gratis</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header fade-in">
+            <div class="container">
+                <h1>Blog <span class="text-gold">Legal Estratégico</span></h1>
+                <p>Análisis y actualidad para proteger tu empresa de riesgos penales y sanciones.</p>
+            </div>
+        </section>
+
+        <section class="section fade-in">
+            <div class="container">
+                <div class="blog-grid">
+
+                    <!-- Blog Post Example 1 -->
+                    <article class="blog-card">
+                        <img src="https://via.placeholder.com/400x300/121212/d4af37?text=Articulo+1" alt="Imagen Blog 1" class="blog-img">
+                        <div class="blog-content">
+                            <span class="blog-date">24 Octubre 2023</span>
+                            <h3 class="blog-title">La importancia de implementar el SAGRILAFT a tiempo</h3>
+                            <p class="blog-excerpt">Conocer la normativa y actuar preventivamente puede salvar a tu compañía de multas millonarias y escándalos reputacionales.</p>
+                            <a href="#" class="read-more">Leer Más →</a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post Example 2 -->
+                    <article class="blog-card">
+                        <img src="https://via.placeholder.com/400x300/121212/d4af37?text=Articulo+2" alt="Imagen Blog 2" class="blog-img">
+                        <div class="blog-content">
+                            <span class="blog-date">15 Noviembre 2023</span>
+                            <h3 class="blog-title">¿Qué hacer ante una investigación de la Fiscalía?</h3>
+                            <p class="blog-excerpt">Pasos inmediatos que todo directivo debe conocer para manejar una crisis legal de manera eficiente y evitar errores costosos.</p>
+                            <a href="#" class="read-more">Leer Más →</a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post Example 3 -->
+                    <article class="blog-card">
+                        <img src="https://via.placeholder.com/400x300/121212/d4af37?text=Articulo+3" alt="Imagen Blog 3" class="blog-img">
+                        <div class="blog-content">
+                            <span class="blog-date">05 Diciembre 2023</span>
+                            <h3 class="blog-title">Riesgos penales en contratos públicos</h3>
+                            <p class="blog-excerpt">Identifica irregularidades contractuales antes de que se conviertan en un problema de índole penal para tu empresa.</p>
+                            <a href="#" class="read-more">Leer Más →</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="var(--color-primary-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Aury Díaz <span>& Asociados</span>
+                </a>
+
+                <div class="footer-nav">
+                    <a href="index.html">Inicio</a>
+                    <a href="sobre-mi.html">Acerca de</a>
+                    <a href="servicios.html">Servicios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+
+                <div class="footer-social">
+                    <a href="#">in</a>
+                    <a href="#">f</a>
+                    <a href="#">X</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2024</span> Aury Díaz & Asociados | Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

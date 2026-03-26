@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta a Aury Díaz & Asociados. Consulta legal para proteger tu empresa de riesgos penales.">
+    <title>Contacto | Aury Díaz & Asociados</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-lg);
+            margin-top: var(--space-md);
+        }
+
+        .contact-info {
+            background-color: var(--color-bg-card);
+            padding: var(--space-md);
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+        }
+
+        .contact-info h3 {
+            margin-bottom: var(--space-sm);
+        }
+
+        .contact-info p {
+            color: var(--color-text-muted);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-info strong {
+            color: var(--color-text-main);
+        }
+
+        @media (min-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="var(--color-primary-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Aury Díaz <span>& Asociados</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="sobre-mi.html" class="nav-link">Acerca de</a>
+                <a href="servicios.html" class="nav-link">Servicios</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contacto.html" class="nav-link active">Contacto</a>
+            </nav>
+
+            <div class="nav-btn">
+                <a href="contacto.html" class="btn btn-gold">Consulta Gratis</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header fade-in">
+            <div class="container">
+                <h1>Evalúa tu <span class="text-gold">Riesgo Penal</span></h1>
+                <p>Agenda una consulta privada y obtén claridad legal para tu empresa.</p>
+            </div>
+        </section>
+
+        <section class="section fade-in">
+            <div class="container contact-grid">
+
+                <!-- Formulario -->
+                <div>
+                    <h2>Envíame un Mensaje</h2>
+                    <p style="color: var(--color-text-muted); margin-bottom: var(--space-sm);">Completa el formulario y nos pondremos en contacto contigo a la brevedad posible.</p>
+
+                    <!-- Integración con Formspree (Gratis) - Reemplaza "TU_ID_DE_FORMSPREE" con el ID que te den al registrarte en formspree.io -->
+                    <form action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre Completo</label>
+                            <input type="text" id="name" name="name" class="form-control" required placeholder="Ej: Carlos Gómez">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" class="form-control" required placeholder="Ej: carlos@empresa.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Teléfono (Opcional)</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Ej: +57 300 123 4567">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Tu Consulta</label>
+                            <textarea id="message" name="message" class="form-control" required placeholder="Describe brevemente tu situación o inquietud legal..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold" style="width: 100%; margin-top: 1rem;">Enviar Mensaje</button>
+                    </form>
+                </div>
+
+                <!-- Información de Contacto -->
+                <div class="contact-info">
+                    <h3>Información Directa</h3>
+                    <p>
+                        <span style="font-size: 1.5rem; color: var(--color-primary-gold);">✉</span>
+                        <span><strong>Email:</strong><br> <a href="mailto:contacto@aurydiaz.com">contacto@aurydiaz.com</a></span>
+                    </p>
+                    <p>
+                        <span style="font-size: 1.5rem; color: var(--color-primary-gold);">📞</span>
+                        <span><strong>Teléfono:</strong><br> +57 300 XXX XXXX (Reemplazar)</span>
+                    </p>
+                    <p>
+                        <span style="font-size: 1.5rem; color: var(--color-primary-gold);">📍</span>
+                        <span><strong>Oficina:</strong><br> Bogotá, Colombia (Atención a nivel nacional)</span>
+                    </p>
+
+                    <h3 style="margin-top: 2rem;">¿Qué esperar de la consulta?</h3>
+                    <ul style="color: var(--color-text-muted); padding-left: 1rem; margin-top: 1rem;">
+                        <li style="margin-bottom: 0.5rem;">Total confidencialidad (Secreto Profesional).</li>
+                        <li style="margin-bottom: 0.5rem;">Evaluación objetiva de tu situación de riesgo.</li>
+                        <li>Diseño de una hoja de ruta preliminar para la solución o prevención.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="var(--color-primary-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Aury Díaz <span>& Asociados</span>
+                </a>
+
+                <div class="footer-nav">
+                    <a href="index.html">Inicio</a>
+                    <a href="sobre-mi.html">Acerca de</a>
+                    <a href="servicios.html">Servicios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+
+                <div class="footer-social">
+                    <a href="#">in</a>
+                    <a href="#">f</a>
+                    <a href="#">X</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2024</span> Aury Díaz & Asociados | Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

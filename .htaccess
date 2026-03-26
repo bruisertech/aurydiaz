@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# Forzar la redirección a HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Ocultar la extensión .html
+# Redirigir la URL con .html a la URL sin .html (opcional pero recomendado para evitar contenido duplicado)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+RewriteRule ^([^.]+)\.html$ /$1 [R=301,L]
+
+# Servir el archivo .html internamente si se solicita sin la extensión
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*?)/?$ $1.html [L]
